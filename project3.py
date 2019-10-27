@@ -6,18 +6,18 @@
 
 import re
 
-string_in = raw_input("Enter the string")
+string_in = input("Enter the string")
 
-char_rem  = raw_input("Enter the character")
+char_rem = input("Enter the character")
 
 def regex_strip(string_in,char_rem):
 
-	a = re.compile(r'[%s]'%(char_rem))
-     
-    # sub(pattern,replace,string,max=0)
-    
-	return a.sub('',string_in)
+    a = re.compile(r'[%s]' % char_rem)
 
-print (regex_strip(string_in,char_rem))
+    # sub(pattern,replace,string,max=0)
+
+    return a.sub('',string_in)
+
+print('The output is : ' + regex_strip (string_in, char_rem))
 
 

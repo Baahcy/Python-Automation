@@ -4,7 +4,6 @@ import os, sys
 finput = input("Enter the file name: ")
 if finput:
 	try:
-		# fopen = open(finput)
 		with open(os.path.join(sys.path[0],finput),'r') as f:
 				print(f.read())
 		count = 0
